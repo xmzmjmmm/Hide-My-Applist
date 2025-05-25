@@ -40,8 +40,10 @@ class MainActivity : MaterialActivity() {
 
     override fun computeUserThemeKey() = ThemeUtils.colorTheme + ThemeUtils.getNightThemeStyleRes(this)
 
+    @Suppress("DEPRECATION")
     override fun onApplyTranslucentSystemBars() {
         super.onApplyTranslucentSystemBars()
+        // 修复点：使用兼容方式设置透明状态栏和导航栏
         window.statusBarColor = Color.TRANSPARENT
         window.navigationBarColor = Color.TRANSPARENT
     }

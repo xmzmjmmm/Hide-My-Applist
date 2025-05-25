@@ -18,8 +18,14 @@ if (officialBuild) {
     plugins.apply(libs.plugins.gms.get().pluginId)
 }
 
+val appPackageName: String by rootProject.extra
+
 android {
     namespace = "com.tsng.hidemyapplist"
+
+    defaultConfig {
+        applicationId = appPackageName
+    }
 
     buildFeatures {
         buildConfig = true

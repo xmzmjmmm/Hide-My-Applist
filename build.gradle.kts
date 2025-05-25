@@ -27,10 +27,11 @@ val minSdkVer by extra(28)
 val targetSdkVer by extra(35)
 val buildToolsVer by extra("35.0.1")
 
-val appVerName by extra("3.4")
+val appVerName by extra("3.6")
 val configVerCode by extra(90)
 val serviceVerCode by extra(97)
 val minBackupVerCode by extra(65)
+val appPackageName by extra("com.tsng.bz.xm")
 
 val androidSourceCompatibility = JavaVersion.VERSION_21
 val androidTargetCompatibility = JavaVersion.VERSION_21
