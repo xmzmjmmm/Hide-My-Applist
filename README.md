@@ -10,35 +10,29 @@
 
 ![banner](banner.png)
 
-- English  
-- [中文（简体）](README_zh_CN.md)
+- [English](README.md)
+- 中文
 
-## About this module
+## 关于该模块
+虽然“检测安装的应用”是不正确的做法，但是并不是所有的与 root 相关联的插件类应用都提供了随机包名支持。这就意味着检测到安装了此类应用（如 Fake Location 、存储空间隔离）与检测到了 root 本身区别不大。（会使用检测手段的 app 可不会认为你是在“我就蹭蹭不进去”）  
+与此同时，部分“不安分”的应用会使用各种漏洞绕过系统权限来获取你的应用列表，从而对你建立用户画像。（如陈叔叔将安装了 V2Ray 的用户分为一类），或是类似于某某校园某某乐跑的软件会要求你卸载作弊软件。  
+该模块提供了一些检测方式用于测试您是否成功地隐藏了某些特定的包名，如 Magisk/Edxposed Manager；同时可作为 Xposed 模块用于隐藏应用列表或特定应用，保护隐私。  
 
-Although it's bad practice to detect the installation of specific apps, not every app using root provides random package name support. In this case, if apps related to root (such as Fake Location and Storage Isolation) are detected, it is tantamount to detecting that the device is rooted.
+## 版权声明
+版权所有 © 2025 HMA 开发者。保留所有权利。
 
-Additionally, some apps use various loopholes to acquire your app list, in order to use it as fingerprinting data or for other nefarious purposes.
+从版本 v3.4 开始，Hide My Applist 不再适用 AGPL-3.0 许可证。相反，某些权利将由所有者保留。
 
-This module can work as an Xposed module to hide apps or reject app list requests, and provides some methods to test whether you have hidden your app list properly.
+以下条件现适用：
 
-## Copyright Notice
+1. **禁止修改**：不得以任何方式修改软件。这包括但不限于更改、添加或删除软件的任何部分代码或功能。
 
-Copyright © 2025 HMA developers. All rights reserved.
+2. **禁止再分发**：不得以任何形式再分发软件。这包括但不限于重新命名、销售或将软件作为其他项目的一部分。
 
-The software Hide My Applist, starting from version v3.4, is no longer under the AGPL-3.0 License. Instead, certain rights to the software are reserved by the owner.
+3. **禁止不注明出处的摘取**：不得提取软件的任何部分、片段或组件并提交到其他项目中，除非以合适方式注明出处。这包括但不限于代码片段、函数和已发布的二进制文件。
 
-The following conditions now apply:
+4. **禁止声称继承**：在许可证变更之前创建的任何软件分支均不得声称是该项目的官方或非官方继承者。这包括但不限于使用项目的名称、品牌或声誉来暗示与原项目的关联。
 
-1. **No Modifications**: The software may not be modified in any way. This includes but is not limited to changing, adding, or removing any part of the software's code or functionality.
+## 更新日志
+[参考发布页面](https://github.com/Dr-TSNG/Hide-My-Applist/releases)  
 
-2. **No Redistribution**: The software may not be redistributed in any form. This includes but is not limited to renaming, selling, or including the software as part of another project.
-
-3. **No Picking without Credit**: No parts, pieces, or components of the software may be extracted and submitted to other projects without proper credit. This includes, but is not limited to, code snippets, functions, and released binaries.
-
-4. **No Claim to Succession**: Any fork of the software that was created before the license change may not claim to be an official or unofficial successor to the project. This includes but is not limited to using the project's name, branding, or reputation to imply a connection to the original project.
-
-## Translation Contributing
-You can contribute translation [here](https://crowdin.com/project/hide-my-applist).
-
-## Update Log
-[Reference to the release page](https://github.com/Dr-TSNG/Hide-My-Applist/releases)  
